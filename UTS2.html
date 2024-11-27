@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Velvet Profile</title>
+  <link rel="stylesheet" type="text/css" href="stylecss2.css">
+  <link rel="icon" type="image/x-icon" href="logo.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <img src="mylogo.jpeg" alt="Red Velvet Logo" class="logo">
+      <h1>Red Velvet Profile</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#registration">Join the Fandom</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="content">
+
+    <!-- Sidebar -->
+    <aside>
+      <nav class="sidebar-nav">
+        <h2>Artikel Terkait</h2>
+        <ul>
+          <li><img src="artikel1.jpg"><a href="https://www.liputan6.com/regional/read/5708765/tanggapan-sm-entertainment-soal-rumor-hengkangnya-joy-red-velvet-dari-agensi" target="_blank">Tanggapan SM Entertainment Soal..</a></li>
+          <li><img src="artikel2.jpeg"><a href="https://www.detik.com/pop/korean-wave/d-7621755/irene-debut-solo-di-tahun-ke-10-karier-red-velvet" target="_blank">Irene Debut Solo di Tahun..</a></li>
+          <li><img src="artikel3.jpg"><a href="https://harian.disway.id/read/836665/jin-bts-dan-wendy-red-velvet-ceritakan-awal-mula-kolaborasi-heart-on-the-window" target="_blank">Jin BTS dan Wendy Red Velvet Ceritakan..</a></li>
+        </ul>
+      </nav>
+      <section class="sidebar-section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+
+           <!-- Foto Grid -->
+        <div class="photo-grid">
+          <div class="grid-container">
+             <img src="1.jpeg" alt="Photo 1">
+             <img src="3.jpg" alt="Photo 2">
+             <img src="32.jpg" alt="Photo 3">
+             <img src="4.jpeg" alt="Photo 4">
+             <img src="2.jpg" alt="Photo 5">
+             <img src="27.jpg" alt="Photo 6">
+             <img src="7.png" alt="Photo 7">
+             <img src="8.jpeg" alt="Photo 8">
+             <img src="9.jpg" alt="Photo 9">
+          </div>
+        </div>
+      </section>
+      <section class="sidebar-section">
+        <h2>Music Videos</h2>
+        <div class="sidebar">
+          <div class="video-slider">
+            <div class="slides">
+              <div class="slide">
+                <video controls>
+                  <source src="Red Velvet 레드벨벳 '피카부 (Peek-A-Boo)' MV.mp4">
+                </video>
+                <p>Red Velvet 레드벨벳 '피카부 (Peek-A-Boo)' MV</p>
+              </div>
+              <div class="slide">
+                <video controls>
+                  <source src="Red Velvet 레드벨벳 'Psycho' MV.mp4">
+                </video>
+                <p>Red Velvet 레드벨벳 'Psycho' MV</p>
+              </div>
+            </div>
+            <button class="prev">‹</button>
+            <button class="next">›</button>
+         </div>
+       </div>
+
+       <script>
+         const slides = document.querySelector('.slides');
+         const slide = document.querySelectorAll('.slide');
+         const prev = document.querySelector('.prev');
+         const next = document.querySelector('.next');
+
+         let currentIndex = 0;
+
+         function showSlide(index) {
+           if (index < 0) {
+             currentIndex = slide.length - 1;
+           } else if (index >= slide.length) {
+             currentIndex = 0;
+           } else {
+             currentIndex = index;
+           }
+           slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+         }
+
+         prev.addEventListener('click', () => showSlide(currentIndex - 1));
+         next.addEventListener('click', () => showSlide(currentIndex + 1));
+     </script>
+
+      </section>
+
+      <footer>
+    <div class="footer-container">
+      <section class="social-media">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.instagram.com/redvelvet.smtown/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@redvelvet_smtown" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://x.com/RVsmtown" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/c/redvelvet" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>© 2024 Red Velvet Community. All rights reserved.</p>
+    </div>
+</footer>
+
+    </aside>
+
+    <!-- Main Body -->
+    <main>
+      <section id="about">
+            <h2>Red Velvet</h2>
+            <p><strong>Red Velvet</strong> adalah grup vokal perempuan Korea Selatan yang dibentuk oleh SM Entertainment pada tahun 2014. Awalnya terdiri dari empat anggota: Irene, Seulgi, Wendy, dan Joy, mereka debut pada 1 Agustus 2014 dengan single "Happiness". Pada Maret 2015, Yeri bergabung, menjadikan mereka lima anggota. Nama Red Velvet menggambarkan dualitas konsep mereka: "red" (merah) yang menyimbolkan gairah dan energi, serta "velvet" (sutra) yang menggambarkan kelembutan dan citra feminin.iskografi mereka mencakup dua album studio, satu album penerbitan ulang, satu album kompilasi, dan sepuluh album mini, dengan dua belas di antaranya mencapai puncak di <i>Gaon Album Chart.</i> Beberapa single hit mereka, seperti <i>"Red Flavor"</i> dan <i>"Power Up"</i>, berhasil menduduki nomor satu di <i>Gaon Digital Chart.<i> Banyak lagu lainnya juga meraih kesuksesan, termasuk <i>"Ice Cream Cake", "Bad Boy", "Psycho", "Queendom", dan "Birthday".</i> Selain itu, Red Velvet juga sukses di Jepang dengan album mini <i>"#Cookie Jar" (2018)</i> dan <i>"Sappy" (2019).</i></p>
+      </section>
+
+      <section id="profile">
+        <h2>Red Velvet Members</h2>
+        <ul>
+            <div class="bio-container">
+              <img src="irene2.jpg" alt="Foto Profil" class="bio-photo">
+              <div class="bio-text">
+                <h3>Nama: Irene Bae</h3>
+                <p><strong>Posisi:</strong> Leader, Main Rapper, Lead Vocalist</p>
+                <p><strong>Tanggal Lahir:</strong> 29 Maret 1991</p>
+                <p><strong>Kota Asal:</strong> Daegu, Korea Selatan</p>
+                <p>Irene adalah seorang artis multitalenta dari grup K-pop Red Velvet. Dia dikenal dengan suara merdu, kemampuan memimpin, dan pesona yang memukau penggemar di seluruh dunia.</p>
+              </div>
+             </div>
+
+            <div class="bio-container">
+              <img src="seulgi.jpg" alt="Foto Seulgi" class="bio-photo">
+              <div class="bio-text">
+                <h3>Nama: Kang Seulgi</h3>
+                <p><strong>Posisi:</strong> Main Vocalist</p>
+                <p><strong>Tanggal Lahir:</strong> 10 Februari 1994</p>
+                <p><strong>Kota Asal:</strong> Ansan, Korea Selatan</p>
+                <p>Seulgi dikenal sebagai penari utama Red Velvet yang karismatik dengan kemampuan vokal yang luar biasa. Dia juga aktif dalam proyek solo dan kolaborasi.</p>
+              </div>
+            </div>
+
+            <div class="bio-container">
+              <img src="wendy2.jpg" alt="Foto Wendy" class="bio-photo">
+              <div class="bio-text">
+                <h3>Nama: Son Seungwan (Wendy)</h3>
+                <p><strong>Posisi:</strong> Main Dancer, Lead Vocalist</p>
+                <p><strong>Tanggal Lahir:</strong> 21 Februari 1994</p>
+                <p><strong>Kota Asal:</strong> Seongbuk-dong, Korea Selatan</p>
+                <p>Wendy adalah vokalis utama Red Velvet yang memiliki suara kuat dan emosional. Ia juga sering menyanyikan lagu-lagu OST dan proyek solo.</p>
+              </div>
+            </div>
+
+            <div class="bio-container">
+              <img src="joy.jpg" alt="Foto Joy" class="bio-photo">
+              <div class="bio-text">
+                <h3>Nama: Park Sooyoung (Joy)</h3>
+                <p><strong>Posisi:</strong> Lead Rapper, Vocalist</p>
+                <p><strong>Tanggal Lahir:</strong> 3 September 1996</p>
+                <p><strong>Kota Asal:</strong> Jeju, Korea Selatan</p>
+                <p>Joy dikenal dengan pesona ceria dan senyuman khasnya. Selain aktif sebagai penyanyi, ia juga sukses dalam dunia akting dan variety show.</p>
+              </div>
+            </div>
+
+            <div class="bio-container">
+              <img src="yeri2.jpg" alt="Foto Yeri" class="bio-photo">
+              <div class="bio-text">
+                <h3>Nama: Kim Yerim (Yeri)</h3>
+                <p><strong>Posisi:</strong> Vocalist, Rapper, Maknae</p>
+                <p><strong>Tanggal Lahir:</strong> 5 Maret 1999</p>
+                <p><strong>Kota Asal:</strong> Seoul, Korea Selatan</p>
+                <p>Sebagai anggota termuda, Yeri membawa energi muda ke dalam grup. Dia juga aktif dalam menulis lagu dan kegiatan amal.</p>
+              </div>
+            </div>
+        </ul>
+      </section>
+
+        <section id="join">
+            <h2>Join the Fandom</h2>
+            <form action="https://formspree.io/f/mbljzkaz" method="POST">
+                <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="bias">Your Bias</label>
+                <select id="bias" name="bias" required>
+                    <option value="" disabled selected>Select your bias</option>
+                    <option value="irene">Irene</option>
+                    <option value="seulgi">Seulgi</option>
+                    <option value="wendy">Wendy</option>
+                    <option value="joy">Joy</option>
+                    <option value="yeri">Yeri</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message to Reveluv</label>
+                <textarea id="message" name="message" placeholder="Write your message"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+        </section>
+    </main> 
+
+
+  
